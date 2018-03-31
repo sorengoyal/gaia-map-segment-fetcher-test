@@ -1,3 +1,4 @@
+version: 0.2
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: A starter AWS Lambda function.
@@ -11,3 +12,4 @@ Resources:
       Description: Lambda Function to fetch the requested map segments
       MemorySize: 128
       Timeout: 3
+      Role: AwsRoleForLambda
