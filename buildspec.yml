@@ -6,17 +6,6 @@ phases:
   install:
     commands:
       - aws cloudformation package --template-file template.yml --s3-bucket https://s3.us-east-2.amazonaws.com --output-template-file outputTemplate.yml
-Resources:
-  map-segment-fetcher:
-    Type: 'AWS::Serverless::Function'
-    Properties:
-      Handler: lambda_function.lambda_handler
-      Runtime: python3.6
-      CodeUri: .
-      Description: Lambda Function to fetch the requested map segments
-      MemorySize: 128
-      Timeout: 3
-      Role: AwsRoleForLambda
 
 artifacts:
   files:
