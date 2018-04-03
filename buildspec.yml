@@ -5,7 +5,6 @@ Description: A starter AWS Lambda function.
 phases:
   install:
     commands:
-      - npm install time
       - aws cloudformation package --template-file template.yml --s3-bucket https://s3.us-east-2.amazonaws.com --output-template-file outputTemplate.yml
 Resources:
   map-segment-fetcher:
