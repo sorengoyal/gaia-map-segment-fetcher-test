@@ -3,10 +3,10 @@ Transform: AWS::Serverless-2016-10-31
 Description: ""
 Resources:
   map-segment-fetcher:
-  Properties: 
-    Handler: lambda_function.lambda_handler
-    Runtime: python3.6
-    CodeUri: ./
-    Policies: AwsRoleForLambda
-    Tags:
-      Project: gaia
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.6
+      CodeUri: ./
+      Policies: AwsRoleForLambda
+      Tags:
+        Project: gaia
