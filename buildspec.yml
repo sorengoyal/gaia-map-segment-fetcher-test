@@ -5,7 +5,7 @@ Description: A starter AWS Lambda function.
 phases:
   install:
     commands:
-      - aws cloudformation package --template-file template.yml --s3-bucket codepipeline-us-east-2-582089868652 --output-template-file outputTemplate.yml
+      - aws cloudformation package --template-file template.yml --s3-bucket codepipeline-us-east-2-582089868652 --s3-prefix map-segment-fetcher-/MyApp --output-template-file outputTemplate.yml
 
 artifacts:
   files:
