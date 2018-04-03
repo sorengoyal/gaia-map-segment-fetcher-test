@@ -9,3 +9,4 @@ Resources:
     CodeUri: ./
     Policies: AwsRoleForLambda
     Tags:
+      Project: gaia
