@@ -10,6 +10,6 @@ Resources:
       CodeUri:
         Bucket: codepipeline-us-east-2-582089868652
         Key: map-segment-fetcher-/MyAppBuild
-      Policies: AwsRoleForLambda
+      Policies: AwsRoleForLambdaInCloudFormationStack #Length should be greater than 20"
       Tags:
         Project: gaia
